@@ -8,9 +8,6 @@
     "description": "Create your blog content"
   },
 
-  "isi": {
-    "type": "richtext"
-  },
   
   "options": {
     "draftAndPublish": true
@@ -26,6 +23,11 @@
       "type": "text",
       "maxLength": 80
     },
+
+    "isi": {
+      "type": "richtext"
+    },
+    
     "slug": {
       "type": "uid",
       "targetField": "title"
