@@ -7,9 +7,16 @@
     "displayName": "Article",
     "description": "Create your blog content"
   },
+
+  "isi":{
+    "type": "text"
+  },
+  
   "options": {
     "draftAndPublish": true
   },
+
+  
   "pluginOptions": {},
   "attributes": {
     "title": {
