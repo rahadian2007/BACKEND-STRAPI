@@ -8,8 +8,8 @@
     "description": "Create your blog content"
   },
 
-  "isi":{
-    "type": "text"
+  "isi": {
+    "type": "richtext"
   },
   
   "options": {
