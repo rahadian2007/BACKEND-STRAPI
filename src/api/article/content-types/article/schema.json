@@ -1,34 +1,22 @@
 {
-  "kind": "collectionType",
   "collectionName": "articles",
   "info": {
     "singularName": "article",
     "pluralName": "articles",
     "displayName": "Article",
-    "description": "Create your blog content"
+    "description": ""
   },
-
-  
   "options": {
     "draftAndPublish": true
   },
-
-  
-  "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "description": {
-      "type": "text",
-      "maxLength": 80
+      "type": "string"
     },
-
-    "isi": {
-      "type": "richtext"
-      "required": false
-    },
-    
     "slug": {
       "type": "uid",
       "targetField": "title"
@@ -37,7 +25,7 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos"]
+      "allowedTypes": ["images"]
     },
     "author": {
       "type": "relation",
@@ -51,9 +39,9 @@
       "target": "api::category.category",
       "inversedBy": "articles"
     },
-    "blocks": {
-      "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+    "isi": {
+      "type": "richtext",
+      "required": false
     }
   }
 }
