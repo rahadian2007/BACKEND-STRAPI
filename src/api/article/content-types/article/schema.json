@@ -26,6 +26,7 @@
 
     "isi": {
       "type": "richtext"
+      "required": false
     },
     
     "slug": {
